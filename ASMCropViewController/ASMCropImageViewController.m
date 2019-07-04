@@ -38,6 +38,8 @@
 	self.cropView.aspectRatio = self.aspectRatio;
 	
 	[self setupImageView];
+	self.view.alpha = 1.0;
+    	self.view.backgroundColor = UIColor.blackColor;
 }
 
 - (void)setupImageView
