@@ -54,6 +54,10 @@
 	self.scrollView.zoomScale = zoomScale;
 	self.cropView.imageSize = self.image.size;
 	self.cropView.zoomScale = self.scrollView.zoomScale;
+	self.cropView.layer.shadowColor = UIColor.blackColor.CGColor;
+    	self.cropView.layer.shadowOpacity = 0.5;
+    	self.cropView.layer.shadowOffset = CGSizeMake(-1, 1);
+    	self.cropView.layer.shadowRadius = 3;
 }
 
 - (void)setImage:(UIImage *)image
