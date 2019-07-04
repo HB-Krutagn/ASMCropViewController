@@ -73,7 +73,8 @@
 	CGFloat offsetY = 0.0f;
 	if ( scrollView.bounds.size.height > scrollView.contentSize.height )
 	{
-		offsetY = (scrollView.bounds.size.height - scrollView.contentSize.height) * 0.5f;
+		offsetY = ((scrollView.bounds.size.height - scrollView.contentSize.height) * 0.5f) - (scrollView.bounds.size.height/13);
+		//offsetY = (scrollView.bounds.size.height - scrollView.contentSize.height) * 0.5f;
 	}
 	
 	return CGSizeMake(offsetX, offsetY);
